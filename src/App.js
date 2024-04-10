@@ -19,7 +19,7 @@ function App() {
     colors:{
       bg:"#f9f5ef",
       black: "#212529",
-      helper: "#8490ff",
+      helper: "#212529",
     },
     media:{
       mobile:"768px",
