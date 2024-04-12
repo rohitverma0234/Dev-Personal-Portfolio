@@ -5,14 +5,10 @@ import { CgMenu, CgClose } from "react-icons/cg";
 const Nav = () => {
   const [menuIcon, setMenuIcon] = useState();
 
-  
-
   return (
-
     <Wrapper>
       <div className={menuIcon ? "navbar active" : "navbar"}>
         <ul className="navbar-lists">
-
 
           <li>
             <a href="#home"
@@ -197,7 +193,7 @@ const Wrapper = styled.nav`
         transform: translateX(0);
         z-index: 999;
         transform-origin: right;
-        transition: all 3s linear;
+        transition: all 1s linear;
         .navbar-link {
           font-size: 30px;
         }
