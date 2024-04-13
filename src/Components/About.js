@@ -1,34 +1,38 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Fade} from "react-reveal";
+
 
 const About = () => {
     return (
         <Wrapper id='about' >
 
-        <div className='maxWidth'>
+            <Fade left duration={2000}>
+                <div className='maxWidth'>
 
-            <div className='flex2'>
+                    <div className='flex2'>
 
-                <div className='div1'>
-                    <img className="div1-img" src="./IMG-20220122-WA0006.jpg" alt="" />
+                        <div className='div1'>
+                            <img className="div1-img" src="./IMG-20220122-WA0006.jpg" alt="" />
+                        </div>
+
+                        <div className='div2'>
+                            {/* 👩 */}
+                            <h2 className='heading'>About Me 😃</h2>
+
+                            <p className='para'>I am a <b>Software Engineer (Frontend UI Developer)</b>, Graduate from Chandigarh Group of Colleges, Landran, Punjab. I have 2 years of experience as a Frontend Weveloper with proficiency in web technologies like <b>HTML5, CSS3, JavaScript, React, Redux, Wordpress</b> building large-scale web applications, cross-browser platforms, and design constraints on the web, and building responsive user interfaces.<br /><br />
+
+                                ✨ <b>Languages</b>: React, Redux, JavaScript<br />
+
+                                ✨ <b>Web technology</b> : HTML5, CSS3, SASS<br />
+
+                                ✨ Bootstrap4, Material UI</p>
+
+                        </div>
+                    </div>
+
                 </div>
-
-                <div className='div2'>
-                {/* 👩 */}
-                    <h2 className='heading'>About Me 😃</h2>   
-
-                    <p className='para'>I am a <b>Software Engineer (Frontend UI Developer)</b>, Graduate from Chandigarh Group of Colleges, Landran, Punjab. I have 2 years of experience as a Frontend Weveloper with proficiency in web technologies like <b>HTML5, CSS3, JavaScript, React, Redux, Wordpress</b> building large-scale web applications, cross-browser platforms, and design constraints on the web, and building responsive user interfaces.<br/><br/>
-
-✨ <b>Languages</b>: React, Redux, JavaScript<br/>
-
-✨ <b>Web technology</b> : HTML5, CSS3, SASS<br/>
-
-✨ Bootstrap4, Material UI</p>
-
-                </div>
-            </div>
-
-            </div>
+            </Fade>
 
         </Wrapper>
     )

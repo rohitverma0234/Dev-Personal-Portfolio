@@ -2,22 +2,26 @@ import React from 'react'
 import styled from "styled-components";
 import Data from './Data';
 import SkillsSection from './SkillsSection';
+import {Fade} from "react-reveal";
+
 
 const Skills = () => {
     return (
         <Wrapper id='skills'>
-        <div className='maxWidth'>
-            <div className='center'>
-                <h2 className='heading'>Skills 🔥</h2>
-            </div>
+            <div className='maxWidth'>
+                <div className='center'>
+                    <h2 className='heading'>Skills 🔥</h2>
+                </div>
 
-            <div className='flex'>
+                <Fade bottom duration={1000} distance="40px">
+                    <div className='flex'>
 
-                {Data.map((val, index, key) => {
-                    return <SkillsSection key={val.id} image={val.image} name={val.name}/>
-                })}
+                        {Data.map((val, index, key) => {
+                            return <SkillsSection key={val.id} image={val.image} name={val.name} />
+                        })}
 
-            </div>
+                    </div>
+                </Fade>
 
             </div>
 

@@ -1,30 +1,33 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Fade } from "react-reveal";
 
 const Certification = () => {
     return (
         <Wrapper id='certification' >
 
-<div className='maxWidth'>
+            <div className='maxWidth'>
 
 
-<div className='center'>
-<h2 className='heading'>Certification 👨‍🎓</h2>
-            </div>
-
-       
-            <div className='flex2'>
-
-                <div className='div2'>     
-                    <p className='para'>I am proud to hold a certification in <b>Frontend Development</b>, demonstrating my proficiency in creating visually appealing and user-friendly web interfaces. Throughout this certification program, I have acquired a comprehensive skill set in <b>HTML, CSS, JavaScript, ReactJS, Redux and Git</b> the fundamental building blocks of web development.<br/><br/>
-                    Having successfully completed the Frontend Development Certification, I am equipped with the skills and knowledge necessary to contribute to the creation of dynamic and user-centric web applications. I am enthusiastic about applying my expertise to real-world projects and staying at the forefront of evolving web technologies.
-                    </p>
+                <div className='center'>
+                    <h2 className='heading'>Certification 👨‍🎓</h2>
                 </div>
 
-                <div className='div1'>
-                    <img className="div1-img" src="./CodingNinjas-Certificate.png" alt="" />
-                </div>
-            </div>
+                <Fade bottom duration={1000} distance="20px">
+                    <div className='flex2'>
+
+                        <div className='div2'>
+                            <p className='para'>I am proud to hold a certification in <b>Frontend Development</b>, demonstrating my proficiency in creating visually appealing and user-friendly web interfaces. Throughout this certification program, I have acquired a comprehensive skill set in <b>HTML, CSS, JavaScript, ReactJS, Redux and Git</b> the fundamental building blocks of web development.<br /><br />
+                                Having successfully completed the Frontend Development Certification, I am equipped with the skills and knowledge necessary to contribute to the creation of dynamic and user-centric web applications. I am enthusiastic about applying my expertise to real-world projects and staying at the forefront of evolving web technologies.
+                            </p>
+                        </div>
+
+                        <div className='div1'>
+                            <img className="div1-img" src="./CodingNinjas-Certificate.png" alt="" />
+                        </div>
+
+                    </div>
+                </Fade>
 
             </div>
 
