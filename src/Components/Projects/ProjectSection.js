@@ -1,39 +1,41 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Fade } from "react-reveal";
 
 const ProjectSection = (props) => {
   return (
     <Wrapper>
-      <div className='main-div'>
+      <Fade bottom duration={1000} distance="20px">
+        <div className='main-div'>
 
-        <div className='project-card'>
+          <div className='project-card'>
 
-        <a className='project-a' href={props.link} target="_blank" rel="noreferrer"> 
+            <a className='project-a' href={props.link} target="_blank" rel="noreferrer">
 
-          <div className='img-div'>
-            <img className='project-img' src={props.img} alt='' />
+              <div className='img-div'>
+                <img className='project-img' src={props.img} alt='' />
+              </div>
+
+              <div className='project-detail'>
+                <p className='project-title'>{props.title}</p>
+                <p className='project-desc'>{props.desc}</p>
+              </div>
+
+              <div className='project-techs'>
+                <img className='icon' src={props.img1} alt='' /><span className='icon-text'>{props.text}</span>
+                <img className='icon' src={props.img2} alt='' /><span className='icon-text'>{props.text}</span>
+                <img className='icon' src={props.img3} alt='' /><span className='icon-text'>{props.text}</span>
+                <img className='icon' src={props.img4} alt='' /><span className='icon-text'>{props.text}</span>
+              </div>
+
+            </a>
+
+
+
           </div>
-
-          <div className='project-detail'>
-            <p className='project-title'>{props.title}</p>
-            <p className='project-desc'>{props.desc}</p>
-          </div>
-
-          <div className='project-techs'>
-            <img className='icon' src={props.img1} alt='' /><span className='icon-text'>{props.text}</span>
-            <img className='icon' src={props.img2} alt='' /><span className='icon-text'>{props.text}</span>
-            <img className='icon' src={props.img3} alt='' /><span className='icon-text'>{props.text}</span>
-            <img className='icon' src={props.img4} alt='' /><span className='icon-text'>{props.text}</span>
-          </div>
-
-          </a>
-
-
 
         </div>
-
-      </div>
-
+      </Fade>
     </Wrapper>
 
   )
