@@ -2,21 +2,24 @@ import React from 'react'
 import styled from 'styled-components'
 import Data from './Data'
 import WidSection from "./WidSection";
+import {Fade} from "react-reveal";
+
 
 const Whatido = () => {
     return (
         <Wrapper id="wid">
-        <div className='maxWidth'>
+            <div className='maxWidth'>
 
-            <div class="center">
-                <h2 className='heading'>What I Do? 👩‍💻</h2>
-            </div>
-
-            <div className='flex'>
-                {Data.map((val, index, key) => {
-                    return <WidSection key={val.id} point={val.point} />
-                })}
-            </div>
+                <div class="center">
+                    <h2 className='heading'>What I Do? 👩‍💻</h2>
+                </div>
+                <Fade right duration={1000}>
+                    <div className='flex'>
+                        {Data.map((val, index, key) => {
+                            return <WidSection key={val.id} point={val.point} />
+                        })}
+                    </div>
+                </Fade>
 
             </div>
 

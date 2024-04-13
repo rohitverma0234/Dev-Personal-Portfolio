@@ -1,31 +1,34 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Fade} from "react-reveal";
+
 
 const ExpSection = (props) => {
     return (
         <Wrapper>
-            <div className='flex'>
-                <div className='exp-meta'>
-                    <img className="job-logo" src={props.logo} alt="" />
-                    <h5 className='job-client'>{props.client}</h5>
-                    <h6 className='job-tenure'>{props.tenure}</h6>
+            <Fade left duration={1000}>
+                <div className='flex'>
+                    <div className='exp-meta'>
+                        <img className="job-logo" src={props.logo} alt="" />
+                        <h5 className='job-client'>{props.client}</h5>
+                        <h6 className='job-tenure'>{props.tenure}</h6>
+                    </div>
+
+                    <div className='exp-details'>
+                        <h4 className='job-title'>{props.title}</h4>
+                        <p className='exp-description'>{props.desc}</p>
+                        <h6 className='resp'>Responsibilites</h6>
+
+                        <ul className='resp-list'>
+                            <li>{props.li1}</li>
+                            <li>{props.li2}</li>
+                            <li>{props.li3}</li>
+                            <li>{props.li4}</li>
+                            <li>{props.li5}</li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div className='exp-details'>
-                    <h4 className='job-title'>{props.title}</h4>
-                    <p className='exp-description'>{props.desc}</p>
-                    <h6 className='resp'>Responsibilites</h6>
-
-                    <ul className='resp-list'>
-                        <li>{props.li1}</li>
-                        <li>{props.li2}</li>
-                        <li>{props.li3}</li>
-                        <li>{props.li4}</li>
-                        <li>{props.li5}</li>
-                    </ul>
-                </div>
-            </div>
-
+            </Fade>
         </Wrapper>
 
     )

@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
 import { AiFillGithub, AiOutlineLinkedin } from "react-icons/ai";
+import {Fade} from "react-reveal";
+
 
 const HeroSection = () => {
 
@@ -47,50 +49,54 @@ const HeroSection = () => {
   }
 
 
-window.onload = function() {
-  var elements = document.getElementsByClassName('txt-rotate');
-  for (var i=0; i<elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-rotate');
-    var period = elements[i].getAttribute('data-period');
-    if (toRotate) {
-      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+  window.onload = function () {
+    var elements = document.getElementsByClassName('txt-rotate');
+    for (var i = 0; i < elements.length; i++) {
+      var toRotate = elements[i].getAttribute('data-rotate');
+      var period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+      }
     }
-  }
-  // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-  document.body.appendChild(css);
-};
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+    document.body.appendChild(css);
+  };
 
   return (
     <Wrapper id='home'>
+      <Fade bottom duration={1000} distance="40px">
+        <div className='flex'>
 
-      <div className='flex'>
-
-        <div className='div1'>
+          <div className='div1'>
             <h2 className='heading'>Hi, I'm Rohit<span class="wave">👋</span></h2>
 
             <h3 className='typing'>and I am <span
-     class="txt-rotate"
-     data-period="1000"
-     data-rotate='[ "React Developer", "Frontend Enthusiast", "UI Designer", "WordPress Designer", "Dedicated Programmer", "Team Person", "Open Source Contributor" ]'></span></h3>
+              class="txt-rotate"
+              data-period="1000"
+              data-rotate='[ "React Developer", "Frontend Enthusiast", "UI Designer", "WordPress Designer", "Dedicated Programmer", "Team Person", "Open Source Contributor" ]'></span></h3>
 
-     <p className='para'>A passionate Full Stack Software Developer 🚀 having a special interest in Frontend technologies and experience of building Web applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks.</p>
+            <p className='para'>A passionate Full Stack Software Developer 🚀 having a special interest in Frontend technologies and experience of building Web applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks.</p>
 
-     <div className='btn-div'>
-      <a href="https://github.com/rohitverma0234"><button className='btn'><AiFillGithub className='svg'/> View on Github</button></a>
-      <a href="https://www.linkedin.com/in/rohitverma0234/"><button className='btn'><AiOutlineLinkedin className='svg'/> View on LinkedIn</button></a>
-     </div>
+            <div className='btn-div'>
+              <a href="https://github.com/rohitverma0234"><button className='btn'><AiFillGithub className='svg' /> View on Github</button></a>
+              <a href="https://www.linkedin.com/in/rohitverma0234/"><button className='btn'><AiOutlineLinkedin className='svg' /> View on LinkedIn</button></a>
+            </div>
+
+
+          </div>
+
+
+
+
+          <div className='div2'>
+            <img src="./hero-section-img.png" alt="" />
+          </div>
 
         </div>
-
-
-        <div className='div2'>
-          <img src="./hero-section-img.png" alt=""/>
-        </div>
-
-        </div>
+      </Fade>
 
     </Wrapper>
   )
@@ -214,6 +220,6 @@ const Wrapper = styled.section`
 
   
   `
-  
+
 
 export default HeroSection
