@@ -2,24 +2,24 @@ import React from 'react'
 import styled from 'styled-components'
 
 const FooterSection = (props) => {
-  return (
-    <Wrapper>
-    <div className='main-div'>
-    <a href={props.link} target="_blank" rel="noreferrer">
-                <div>
-                    <img className='image' src={props.img} alt='' />
-                </div>
+    return (
+        <Wrapper>
+            <div className='main-div'>
+                <a href={props.link} target="_blank" rel="noreferrer">
+                    <div>
+                        <img className='image' src={props.img} alt='' />
+                    </div>
 
-                
-                <div className='main-div2'>
-                    <p className="head">{props.head}</p>
-                    <p className='text'>{props.value}</p>
-                </div>
+
+                    <div className='main-div2'>
+                        <p className="head">{props.head}</p>
+                        <p className='text'>{props.value}</p>
+                    </div>
                 </a>
 
             </div>
-    </Wrapper>
-  )
+        </Wrapper>
+    )
 }
 
 const Wrapper = styled.section`
@@ -43,7 +43,7 @@ const Wrapper = styled.section`
     }
 
     .main-div:hover{
-        background-color: rgb(231 235 239);
+        background-color: rgb(254 122 22);
         -webkit-transform: scale(1.07);
         transform: scale(1.07);
         transition-duration: .2s;
@@ -63,8 +63,6 @@ const Wrapper = styled.section`
         text-decoration:none;
         color:black;
     }
-
-
    
 
     `

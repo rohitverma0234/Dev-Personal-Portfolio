@@ -44,12 +44,12 @@ const Wrapper = styled.section`
         padding-top:100px;
         padding-bottom:50px;
         display:flex;
-    justify-content:center;
-    align-items:center;
+        justify-content:center;
+        align-items:center;
     }
 
     .heading{
-        border-bottom: 5px solid #ff6e00;
+    border-bottom: 5px solid #ff6e00;
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 30px;

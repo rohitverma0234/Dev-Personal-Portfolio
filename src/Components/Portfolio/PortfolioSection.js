@@ -3,19 +3,19 @@ import styled from 'styled-components'
 
 const PortfolioSection = (props) => {
 
-    
+
   return (
     <Wrapper>
 
-    
-    <div className='img-div'>
+
+      <div className='img-div'>
         {/* <a href="#img1"> */}
         <img className='image' src={props.image} alt="" />
         {/* </a> */}
-    </div>
+      </div>
 
-  
-{/* <a href="#img" class="lightbox" id="img1">
+
+      {/* <a href="#img" class="lightbox" id="img1">
   <span className='bg-img'>
     <img src="./ui1.5f118c108da7a4f55589.png" alt=''/>
   </span>
